@@ -1,0 +1,10 @@
+[Unit]
+ Description="transform cpu state to low-power mode"
+ After=suspend.target
+ 
+ [Service]
+ ExecStart=/bin/bash 
+ 
+ [Install]
+ WantedBy=multi-user.target
+
